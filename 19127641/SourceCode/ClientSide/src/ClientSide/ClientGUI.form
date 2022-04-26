@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ClientSide.ClientGUI">
+  <grid id="27dc6" binding="MainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="688" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="2ac70" binding="leftPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <minimumSize width="150" height="44"/>
+          <preferredSize width="150" height="44"/>
+          <requestFocusEnabled value="true"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <component id="5dffa" class="javax.swing.JLabel">
+            <constraints border-constraint="North"/>
+            <properties>
+              <font name="JetBrains Mono" size="20" style="1"/>
+              <text value="Online now"/>
+            </properties>
+          </component>
+          <scrollpane id="4e3eb">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="627fd" class="javax.swing.JList" binding="logList">
+                <constraints/>
+                <properties>
+                  <enabled value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="b07a3">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="638bd" class="javax.swing.JList" binding="userOnlineList">
+                <constraints/>
+                <properties>
+                  <font size="16"/>
+                  <selectionMode value="0"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="b37bd" binding="rightPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="etched"/>
+        <children>
+          <grid id="8309b" binding="userPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="e68c4" binding="TopPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="5fee4" binding="Status" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints border-constraint="East"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="668e1" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <text value="Status: "/>
+                        </properties>
+                      </component>
+                      <component id="7e2b3" class="javax.swing.JLabel" binding="statusLabel">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-12237464"/>
+                          <text value="None"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="af5aa" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints border-constraint="West"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="80f97" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <text value="User: "/>
+                        </properties>
+                      </component>
+                      <component id="6d081" class="javax.swing.JLabel" binding="userLabel">
+                        <constraints/>
+                        <properties>
+                          <text value="None"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="4c69a" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="4570" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="West"/>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="6a291" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="b9423" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints border-constraint="East"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="5b4c6" class="javax.swing.JButton" binding="sendButton" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <text value="Send"/>
+                        </properties>
+                      </component>
+                      <component id="e78c2" class="javax.swing.JButton" binding="attachmentButton" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <text value="Attachment"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="52669" class="javax.swing.JTextField" binding="messageTextField">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <minimumSize width="49" height="200"/>
+                      <toolTipText value="Type your message here..."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="2a323" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="4ac08">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="7a502" class="javax.swing.JList" binding="messageList">
+                    <constraints/>
+                    <properties>
+                      <font size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
